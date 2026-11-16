@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff7a18">
+  <title>Raw coffee+ | Take My Muffin × Raw Gravity</title>
+  <meta name="description" content="Raw coffee+ Exclusive Edition — low-caffeine arabica with creatine, Lion's Mane, amino acids and adaptogens.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s) {
+      if(f.fbq)return;
+      n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1632582321547641');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1632582321547641&ev=PageView&noscript=1"
+      alt="">
+  </noscript>
+  <!-- End Meta Pixel -->
+
+  <style>
+    :root {
+      --ink: #15100c;
+      --dark: #140b06;
+      --paper: #fff6e4;
+      --orange: #ff7a18;
+      --red: #f42a16;
+      --yellow: #ffd400;
+      font-family: Archivo, Arial, sans-serif;
+      color: var(--ink);
+      background: #2a1409;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      margin: 0;
+      scroll-behavior: smooth;
+      background: #2a1409;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      padding-bottom: calc(78px + env(safe-area-inset-bottom));
+      background: #2a1409;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+
+    .page {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding: 22px 24px 30px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 50% 28%, #ffd14a 0%, #ff9a1c 34%, #f0530f 68%, #b92d06 100%);
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: -1;
+      inset: -60%;
+      content: "";
+      pointer-events: none;
+      background: repeating-conic-gradient(
+        from 0deg,
+        rgba(255, 226, 150, .33) 0deg 9deg,
+        transparent 9deg 20deg
+      );
+      -webkit-mask-image: radial-gradient(circle, transparent 0%, #000 13%, #000 54%, transparent 72%);
+      mask-image: radial-gradient(circle, transparent 0%, #000 13%, #000 54%, transparent 72%);
+      animation: rays-spin 120s linear infinite;
+    }
+
+    .hero-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .brandline,
+    .edition {
+      margin: 0;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      line-height: 1.2;
+      text-shadow: 0 1px 3px rgba(90, 30, 0, .35);
+    }
+
+    .edition {
+      flex: none;
+      padding: 8px 13px;
+      border-radius: 24px;
+      background: var(--dark);
+      white-space: nowrap;
+    }
+
+    .headline {
+      position: relative;
+      margin: 22px 0 0;
+      text-align: center;
+      font-family: Anton, Impact, sans-serif;
+      font-size: clamp(50px, 13.8vw, 84px);
+      font-weight: 400;
+      letter-spacing: -.025em;
+      line-height: .91;
+      text-transform: uppercase;
+      color: #fff;
+      -webkit-text-stroke: 4px var(--ink);
+      paint-order: stroke fill;
+      text-shadow: 3px 5px 0 var(--ink);
+    }
+
+    .headline span { display: block; }
+    .headline .headline-small { font-size: .72em; }
+    .headline .red { color: var(--red); }
+    .headline .yellow { color: var(--yellow); }
+
+    .limited {
+      position: relative;
+      z-index: 2;
+      width: fit-content;
+      margin: 10px 0 0 auto;
+      padding: 12px 17px;
+      transform: rotate(6deg);
+      border: 3px solid var(--ink);
+      border-radius: 8px;
+      background: var(--red);
+      box-shadow: 3px 5px 0 var(--ink);
+      color: #fff;
+      font-family: Anton, Impact, sans-serif;
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .hero-art {
+      position: relative;
+      width: 100%;
+      max-width: 520px;
+      aspect-ratio: 944 / 1104;
+      margin: 4px auto -8px;
+      filter: drop-shadow(0 18px 24px rgba(93, 22, 0, .34));
+    }
+
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .claim {
+      position: relative;
+      width: 90%;
+      margin: 2px auto 0;
+      padding: 16px 12px 18px;
+      transform: rotate(-1deg);
+      border-radius: 22px 12px 20px 10px;
+      background: var(--yellow);
+      box-shadow: 0 7px 0 #d9a600;
+      color: var(--ink);
+      text-align: center;
+      font-family: Anton, Impact, sans-serif;
+      line-height: .98;
+    }
+
+    .claim-main { font-size: clamp(25px, 7vw, 36px); }
+    .claim-sub { font-size: clamp(25px, 7vw, 36px); }
+    .claim small { font-size: .52em; }
+
+    .amazon-button {
+      display: flex;
+      width: 86%;
+      min-height: 62px;
+      margin: 20px auto 0;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 4px solid var(--ink);
+      border-radius: 60px;
+      background: #fff;
+      box-shadow: 0 7px 0 var(--ink);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .amazon-button:hover {
+      transform: translateY(2px);
+      box-shadow: 0 5px 0 var(--ink);
+    }
+
+    .amazon-button:active {
+      transform: translateY(5px);
+      box-shadow: 0 2px 0 var(--ink);
+    }
+
+    .buy-on {
+      font-family: Anton, Impact, sans-serif;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .amazon-word {
+      position: relative;
+      padding-bottom: 4px;
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .amazon-word::after {
+      position: absolute;
+      right: 12%;
+      bottom: 0;
+      left: 8%;
+      height: 3px;
+      border-bottom: 3px solid #ff9900;
+      border-radius: 0 0 50% 50%;
+      content: "";
+    }
+
+    .buy-arrow {
+      font-family: Anton, Impact, sans-serif;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .hero-note {
+      position: relative;
+      margin: 15px 0 0;
+      color: #3d1a08;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .ticker {
+      overflow: hidden;
+      padding: 10px 0;
+      background: var(--dark);
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker-scroll 22s linear infinite;
+    }
+
+    .ticker-group {
+      display: flex;
+      flex: none;
+      align-items: center;
+    }
+
+    .ticker-item {
+      padding: 0 19px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .ticker-item b {
+      padding-left: 18px;
+      color: var(--orange);
+    }
+
+    .section {
+      padding: 30px 20px;
+    }
+
+    .intro { background: var(--paper); }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+    }
+
+    .section-title {
+      margin: 10px 0 0;
+      font-family: Anton, Impact, sans-serif;
+      font-size: clamp(35px, 9vw, 48px);
+      font-weight: 400;
+      letter-spacing: .2px;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+
+    .section-copy {
+      margin: 16px 0 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .coffee-photo {
+      margin-top: 24px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border: 4px solid var(--ink);
+      border-radius: 22px;
+      box-shadow: 0 9px 0 #e03a0d;
+    }
+
+    .coffee-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .lineup {
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 122, 24, .24), transparent 55%),
+        var(--dark);
+      color: #fff;
+    }
+
+    .lineup .eyebrow { color: var(--orange); }
+    .lineup .section-title { color: var(--yellow); }
+
+    .ingredients {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .ingredient {
+      overflow: hidden;
+      border: 2px solid var(--ink);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+      color: var(--ink);
+    }
+
+    .ingredient img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-bottom: 3px solid var(--ink);
+      object-fit: cover;
+    }
+
+    .ingredient-mg {
+      padding: 8px 10px 5px;
+      background: var(--yellow);
+      font-family: Anton, Impact, sans-serif;
+      font-size: 27px;
+      line-height: 1.05;
+    }
+
+    .ingredient-name {
+      min-height: 48px;
+      padding: 9px 10px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .mane {
+      background: linear-gradient(155deg, #ff8c1e, #ef4f0d);
+      color: #fff;
+    }
+
+    .mane .eyebrow { color: #3d1a08; }
+
+    .mane-photo {
+      width: min(100%, 380px);
+      margin: 26px auto 0;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border: 4px solid var(--ink);
+      border-radius: 50%;
+      box-shadow: 0 10px 0 var(--ink);
+    }
+
+    .mane-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .original {
+      position: relative;
+      min-height: 300px;
+      overflow: hidden;
+      padding-right: 128px;
+      background: var(--paper);
+    }
+
+    .unicorn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 124px;
+      height: 245px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .final-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 44px;
+      background: var(--yellow);
+      text-align: center;
+    }
+
+    .final-cta .section-title { margin: 0; }
+    .final-cta .section-copy { font-weight: 700; }
+
+    .final-cta .amazon-button {
+      width: 90%;
+      margin-top: 25px;
+      background: #fff;
+    }
+
+    .footer {
+      padding: 24px 20px 30px;
+      background: var(--dark);
+      color: #b9ada3;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    .footer strong { color: #e8dfd6; }
+
+    .sticky-bar {
+      position: fixed;
+      z-index: 50;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      padding-bottom: env(safe-area-inset-bottom);
+      pointer-events: none;
+    }
+
+    .sticky-inner {
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      min-height: 70px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 16px;
+      border-top: 3px solid var(--yellow);
+      background: var(--dark);
+      pointer-events: auto;
+    }
+
+    .sticky-label {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      gap: 3px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .sticky-label small {
+      overflow: hidden;
+      color: #ffb23a;
+      font-size: 10px;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .sticky-button {
+      display: flex;
+      min-height: 48px;
+      flex: none;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border: 3px solid var(--ink);
+      border-radius: 40px;
+      background: var(--yellow);
+      box-shadow: 0 4px 0 #a32c05;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .sticky-button .buy-on { font-size: 17px; }
+    .sticky-button .amazon-word { font-size: 17px; }
+    .sticky-button .buy-arrow { font-size: 19px; }
+
+    @keyframes ticker-scroll {
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes rays-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (min-width: 700px) {
+      body { padding-top: 20px; }
+
+      .page {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+      }
+
+      .sticky-inner { border-radius: 14px 14px 0 0; }
+    }
+
+    @media (max-width: 380px) {
+      .hero { padding-right: 17px; padding-left: 17px; }
+      .brandline, .edition { font-size: 9px; }
+      .edition { padding: 7px 10px; }
+      .ingredients { gap: 11px; }
+      .ingredient-mg { font-size: 23px; }
+      .sticky-inner { padding-right: 10px; padding-left: 10px; }
+      .sticky-button { gap: 4px; padding-right: 10px; padding-left: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero::before, .ticker-track { animation: none; }
+      .amazon-button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" id="top">
+      <header class="hero-header">
+        <p class="brandline">TAKE MY MUFFIN × RAW GRAVITY</p>
+        <p class="edition">EXCLUSIVE EDITION</p>
+      </header>
+
+      <h1 class="headline">
+        <span class="headline-small">THIS IS <span class="red">NOT</span></span>
+        <span>NORMAL</span>
+        <span class="yellow">COFFEE.</span>
+      </h1>
+
+      <div class="limited">LIMITED COLLAB</div>
+
+      <div class="hero-art">
+        <img src="./assets/hero-pack.png"
+          alt="Take My Muffin × Raw Gravity Raw coffee+ pouch with iced coffee"
+          fetchpriority="high">
+      </div>
+
+      <div class="claim">
+        <div class="claim-main">3,000<small>MG</small> CREATINE</div>
+        <div class="claim-sub">+ LION'S MANE</div>
+      </div>
+
+      <a class="amazon-button" data-amazon-position="hero"
+        href="https://www.amazon.com/dp/B0GTWJ3K1R?maas=maas_adg_1B836F73441707C47F79A9166681084F_afap_abs&ref_=aa_maas&tag=maas"
+        target="_blank" rel="noopener noreferrer">
+        <span class="buy-on">BUY ON</span>
+        <span class="amazon-word">amazon</span>
+        <span class="buy-arrow">›</span>
+      </a>
+
+      <p class="hero-note">Same Exclusive Edition you just saw in the ad — ships from Amazon</p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+        </div>
+        <div class="ticker-group">
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+          <span class="ticker-item">EXCLUSIVE EDITION <b>•</b></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section intro">
+      <p class="eyebrow">COFFEE, WITH A TWIST</p>
+      <h2 class="section-title">YOUR MUG JUST GOT WEIRD.<br>IN A GOOD WAY.</h2>
+      <p class="section-copy">
+        Raw coffee+ is low-caffeine arabica loaded with the stuff you normally buy
+        in four separate tubs: creatine, Lion's Mane, amino acids and adaptogens.
+        One scoop, one cup, zero extra steps.
+      </p>
+      <div class="coffee-photo">
+        <img src="./assets/coffee.png" alt="Iced coffee with creamy foam" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section lineup">
+      <p class="eyebrow">WHAT'S INSIDE</p>
+      <h2 class="section-title">THE LINEUP.</h2>
+      <p class="section-copy">
+        Four ingredient groups, printed right on the pouch. No proprietary-blend hide-and-seek.
+      </p>
+
+      <div class="ingredients">
+        <article class="ingredient">
+          <img src="./assets/creatine.png" alt="Creatine powder" loading="lazy">
+          <div class="ingredient-mg">3,000 mg</div>
+          <div class="ingredient-name">CREATINE MONOHYDRATE</div>
+        </article>
+        <article class="ingredient">
+          <img src="./assets/lions-mane.png" alt="Lion's Mane mushroom" loading="lazy">
+          <div class="ingredient-mg">1,000 mg</div>
+          <div class="ingredient-name">LION'S MANE 10:1 EXTRACT</div>
+        </article>
+        <article class="ingredient">
+          <img src="./assets/amino-acids.png" alt="Amino acid crystals" loading="lazy">
+          <div class="ingredient-mg">400 mg</div>
+          <div class="ingredient-name">AMINO ACIDS</div>
+        </article>
+        <article class="ingredient">
+          <img src="./assets/adaptogens.png" alt="Adaptogenic roots" loading="lazy">
+          <div class="ingredient-mg">300 mg</div>
+          <div class="ingredient-name">ADAPTOGENS</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section mane">
+      <p class="eyebrow">THE HEADLINER</p>
+      <h2 class="section-title">LION'S MANE 10:1.</h2>
+      <p class="section-copy">
+        A proper 10:1 extract alongside low-caffeine arabica. Check the full product
+        label and details on Amazon.
+      </p>
+      <div class="mane-photo">
+        <img src="./assets/lions-mane-feature.png"
+          alt="Lion's Mane mushroom and coffee beans"
+          loading="lazy">
+      </div>
+    </section>
+
+    <section class="section original">
+      <p class="eyebrow">THE ORIGINAL DROP</p>
+      <h2 class="section-title">REAL COLLAB.<br>REAL POUCH.</h2>
+      <p class="section-copy">
+        Exclusive Edition, wrapped in Take My Muffin artwork, filled with the Raw Gravity formula.
+      </p>
+      <img class="unicorn" src="./assets/unicorn.png" alt="" loading="lazy">
+    </section>
+
+    <section class="section final-cta">
+      <h2 class="section-title">NOT NORMAL.<br>JUST YOUR KIND<br>OF COFFEE.</h2>
+      <p class="section-copy">Take My Muffin × Raw Gravity — Exclusive Edition</p>
+      <a class="amazon-button" data-amazon-position="final"
+        href="https://www.amazon.com/dp/B0GTWJ3K1R?maas=maas_adg_1B836F73441707C47F79A9166681084F_afap_abs&ref_=aa_maas&tag=maas"
+        target="_blank" rel="noopener noreferrer">
+        <span class="buy-on">BUY ON</span>
+        <span class="amazon-word">amazon</span>
+        <span class="buy-arrow">›</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <strong>Take My Muffin × Raw Gravity — Exclusive Edition.</strong>
+      Price, availability, shipping, returns and the full product label are handled on Amazon.
+      This page is not a checkout. Dietary supplement. Not intended to diagnose, treat, cure
+      or prevent any disease.
+    </footer>
+  </main>
+
+  <aside class="sticky-bar" aria-label="Quick link to Amazon">
+    <div class="sticky-inner">
+      <div class="sticky-label">
+        <span>RAW COFFEE+</span>
+        <small>Take My Muffin × Raw Gravity</small>
+      </div>
+      <a class="sticky-button" data-amazon-position="sticky"
+        href="https://www.amazon.com/dp/B0GTWJ3K1R?maas=maas_adg_1B836F73441707C47F79A9166681084F_afap_abs&ref_=aa_maas&tag=maas"
+        target="_blank" rel="noopener noreferrer">
+        <span class="buy-on">BUY ON</span>
+        <span class="amazon-word">amazon</span>
+        <span class="buy-arrow">›</span>
+      </a>
+    </div>
+  </aside>
+
+  <script>
+    document.querySelectorAll('[data-amazon-position]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.fbq) {
+          window.fbq('trackCustom', 'AmazonClick', {
+            position: link.getAttribute('data-amazon-position')
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
